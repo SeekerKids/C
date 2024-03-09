@@ -1,0 +1,70 @@
+//NOMOR 6
+#include <stdio.h>
+
+int main() {
+    char input;
+    printf("===INPUT===\n");
+    printf("Huruf yang ingin diperiksa : ");
+    scanf(" %c", &input);
+    printf("===OUTPUT===\n");
+    if (input == 'G' || input == 'L' || input == 'O' || input == 'R' || input == 'Y') {
+        printf("Huruf %c terdapat pada kata \"GLORY\"\n", input);
+    } else {
+        printf("Huruf %c tidak terdapat pada kata \"GLORY\"\n", input);
+    }
+    return 0;
+}
+
+//NOMOR 7
+#include <stdio.h>
+
+struct data { 
+char nama[20], NIM[15] ;
+int nilai; 
+}d; 
+
+int main() {
+    printf("===INPUT===\n");
+    printf("Nama : ");
+    gets(d.nama);
+    printf("NIM : ");
+    gets(d.NIM);
+    printf("nilai : ");
+    scanf("%d", &d.nilai);
+
+    printf("===OUTPUT===\n");
+    printf("Nama : %s \n",d.nama); 
+    printf("NIM : %s \n",d.NIM);
+    printf("nilai : %d \n",d.nilai);
+    
+    if(d.nilai > 0 && d.nilai <=50){
+        printf("Indeks nilai : D \n");
+        printf("Keterangan : Tidak Lulus\n");      
+    }
+    else if(d.nilai > 50 && d.nilai <=60){
+        printf("Indeks nilai : C \n");
+        printf("Keterangan : Tidak Lulus\n");           
+    } 
+        else if(d.nilai > 60 && d.nilai <=65){
+        printf("Indeks nilai : BC \n");
+        printf("Keterangan : Tidak Lulus\n");           
+    } 
+        else if(d.nilai > 65 && d.nilai <=70){
+        printf("Indeks nilai : B \n");
+        printf("Keterangan : Lulus\n");           
+    } 
+        else if(d.nilai > 70 && d.nilai <=80){
+        printf("Indeks nilai : AB \n");
+        printf("Keterangan : Lulus\n");           
+    } 
+        else if(d.nilai > 80 && d.nilai <=100){
+        printf("Indeks nilai : A \n");
+        printf("Keterangan : Lulus\n");           
+    } 
+    
+    
+    return 0;
+}
+
+
+//NOMOR 8
